@@ -1,0 +1,17 @@
+<div id="education" class="container my-5">
+  <h2 class="text-center mb-4">Education</h2>
+  <div class="row">
+    <!-- Loop through the education list -->
+    <div *ngFor="let edu of educationList" class="col-12 mb-4">
+      <div class="card shadow-sm education-card">
+        <div class="card-body">
+          <h5 class="card-title ">{{ edu.degree }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ edu.institution }}</h6>
+          <p class="card-text mb-1"><strong>Duration:</strong> {{ edu.duration }}</p>
+          <p class="card-text mb-1"><strong>CGPA:</strong> {{ edu.cgpa }}</p>
+          <p class="card-text mb-0">{{ edu.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

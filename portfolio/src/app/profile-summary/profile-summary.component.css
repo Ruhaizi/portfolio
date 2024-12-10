@@ -1,0 +1,26 @@
+#about {
+  padding-top: 56px; /* Adjust if your navbar height differs */
+}
+
+.profile-summary {
+    max-width: 800px;
+    overflow: hidden;
+    
+  }
+
+  button{
+    color : black; 
+    background-color: #A23745;
+  }
+  .button_font{
+    color : #A23745; 
+  }
+
+
+  button:hover{
+    color: #DDC28C; /* Change color on hover */
+  }
+  
+
+ 
+  

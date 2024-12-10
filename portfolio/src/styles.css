@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+
+html, body {
+    /* padding-top : 56px; */
+    height: 100%;
+    margin: 0;
+    overflow: auto; /* Allow scrolling */
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 56px;  */
+    
+  }
+  
+  .section {
+    padding: 20px; /* Optional spacing for each section */
+    min-height: 100vh; /* Ensure full viewport height if required */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  
+  .full-height {
+    background-color: white; /* Excreamample background color for visibility */
+  }
+  
+ 
+  /* Fix navbar at the top */
+  .navbar {
+    z-index: 1000; /* Ensure navbar is above other content */
+  }
+
+  button {
+    background-color: #A23745; /* Replace with your desired color */
+    color: white; /* Text color */
+    border: none; /* Remove border (optional) */
+    padding: 10px 20px; /* Add some padding (optional) */
+    border-radius: 5px; /* Rounded corners (optional) */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }

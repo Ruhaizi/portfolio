@@ -1,0 +1,16 @@
+.contact-section {
+    padding: 20px;
+    display: flex; /* Enables Flexbox for the row */
+    justify-content: space-between; /* Ensures both columns take their respective halves */
+    align-items: flex-start; /* Aligns content at the top */
+  }
+  
+  .contact-details {
+    text-align: right; /* Right-aligns text in contact details */
+    padding-right: 20px;
+  }
+  
+  .send-message-form {
+    padding-left: 20px;
+  }
+  

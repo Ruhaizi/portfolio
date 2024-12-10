@@ -1,0 +1,58 @@
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #A23745, #db818d);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  color: #db818d;
+}
+
+
+.navbar .nav-link {
+  color: rgb(243, 233, 224);
+  /* font-weight: 500; */
+  text-transform: capitalize;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #DDC28C;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #DDC28C;
+  /* font-weight: bold; */
+}
+
+/* Navbar on Scroll */
+.navbar.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Toggle on Mobile */
+.navbar-toggler-icon {
+  background-color: #DDC28C;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon:hover {
+  background-color: #A23745;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    padding: 8px 0;
+  }
+  .navbar-toggler-icon {
+    background-color: #DDC28C;
+  }
+  .navbar-toggler-icon:hover {
+    background-color: #A23745;
+  }
+}

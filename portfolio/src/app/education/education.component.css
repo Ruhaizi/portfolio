@@ -1,0 +1,42 @@
+.education-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-card .card-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.education-card:hover .card-details {
+  opacity: 1;
+  max-height: 200px; /* Adjust based on your content height */
+}
+
+.education-card .card-details {
+  /* Set the maximum height of the scrollable area */
+  max-height: 70px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Optional: Add some padding for better appearance */
+}
+
+/* Optional: Customize the scrollbar appearance */
+.education-card .card-details::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.education-card .card-details::-webkit-scrollbar-thumb {
+  background: #A23745; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Round corners for the thumb */
+}
+
+.education-card .card-details::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
